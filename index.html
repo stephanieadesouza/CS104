@@ -218,5 +218,17 @@
 let z = x + y;
 document.getElementbyID("demo").innerHTML =
 "The value of z is: " + result;
+</script>
 
-</script>   
+<div style="margin-top: 50px;">
+    <button id="changeTextBtn" onclick="textFunction()">
+        Change Text
+    </button>
+    <p id="displayText">paragraph</p>
+    <script>
+        document.getElementbyId("ChangeTextBtn").addEventListener("click", textFunction);
+        function textFunction(){
+            document.getElementbyId("displayText").innerHTML = "Hello, JavaScript World!";
+        }
+    </script>
+    </div>
